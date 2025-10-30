@@ -4,8 +4,6 @@ theme:
   name: material
   icon:
     logo: fontawesome/solid/blog
-  features:
-    - navigation.footer
   palette:
     - scheme: slate
       toggle:
@@ -19,9 +17,27 @@ theme:
         name: Light mode
       primary: blue
       accent: deep purple
+  features:
+    - content.code.copy
+    - toc.follow
+    # - toc.integrate
+    - navigation.footer
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tracking
+    - navigation.top
+    # - navigation.tabs
+    - search.suggest
+
+plugins:
+  - search
+  - blog
+  - tags
 
 markdown_extensions:
+  - admonition
   - attr_list
+  - md_in_html
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
@@ -29,8 +45,6 @@ markdown_extensions:
       anchor_linenums: true
       line_spans: __span
       pygments_lang_class: true
-  - pymdownx.inlinehilite
-  - pymdownx.snippets
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
@@ -38,14 +52,24 @@ markdown_extensions:
           format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed:
       alternate_style: true
-  - admonition
+  - pymdownx.tasklist:
+      custom_checkbox: true
   - pymdownx.details
+  - pymdownx.caret
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.snippets
+  - pymdownx.tilde
+  - toc:
+      permalink: true
 
 extra:
+  generator: true
   social:
-    - icon: simple/github
+    - icon: fontawesome/brands/github
       link: https://github.com/nedevski
-    - icon: material/linkedin
+    - icon: fontawesome/brands/linkedin
       link: https://linkedin.com/in/nedevski
 
 copyright: Copyright &copy; 2025 Nikola Nedevski
