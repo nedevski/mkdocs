@@ -26,7 +26,7 @@ theme:
     - navigation.instant.progress
     - navigation.tracking
     - navigation.top
-    # - navigation.tabs
+    - navigation.tabs
     - search.suggest
 
 plugins:
@@ -73,3 +73,10 @@ extra:
       link: https://linkedin.com/in/nedevski
 
 copyright: Copyright &copy; 2025 Nikola Nedevski
+
+nav:
+  - Home: index.md
+  - Sample pages:
+      - Examples: examples.md
+  - Blog:
+      - blog/index.md

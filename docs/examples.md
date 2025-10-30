@@ -75,6 +75,9 @@ sequenceDiagram
   Database-->>Terminal: Customer data
 ```
 
+
+## Collapsible thing
+
 ??? info "Collapsible callout"
 
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
@@ -92,8 +95,12 @@ sequenceDiagram
 - ^^This was inserted (underline)^^
 - ~~This was deleted (strikethrough)~~
 
+
+## Key combinations
+
 ++ctrl+alt+del++
 
+## Grid cards
 
 <div class="grid cards" markdown>
 
@@ -132,6 +139,8 @@ sequenceDiagram
 
 </div>
 
+
+## Checklist
 
 - [x] Lorem ipsum dolor sit amet, consectetur adipiscing elit
 - [ ] Vestibulum convallis sit amet nisi a tincidunt
