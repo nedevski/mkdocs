@@ -1,0 +1,16 @@
+{
+  "image": "mcr.microsoft.com/devcontainers/python:3.12",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-python.pylint",
+        "ms-python.vscode-pylance",
+        // "esbenp.prettier-vscode",
+        "wolfieshorizon.python-auto-venv",
+        "redhat.vscode-yaml"
+      ]
+    }
+  },
+  "postCreateCommand": "bash .devcontainer/install-dependencies.sh"
+}
