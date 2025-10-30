@@ -3,7 +3,7 @@ site_url: http://mkdocs.nedevski.com
 theme:
   name: material
   icon:
-    logo: fontawesome/solid/blog
+    logo: material/home
   palette:
     - scheme: slate
       toggle:
@@ -76,6 +76,9 @@ copyright: Copyright &copy; 2025 Nikola Nedevski
 
 nav:
   - Home: index.md
+  - Homelab:
+      - homelab/index.md
+      - Servers: homelab/servers.md
   - Sample pages:
       - Examples: examples.md
   - Blog:
