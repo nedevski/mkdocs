@@ -14,7 +14,7 @@ tags:
 
 ---
 image:
-  path: /images/2023-06-07-macro-keyboard-audio/thumbnail.jpg
+  path: /images/unifi.png
   alt: HID Macros screenshot
 ---
  
@@ -23,7 +23,11 @@ image:
 I have a lot of audio input/output devices - headphones mic, audio interface mic, webcam mic and even more different audio outputs.
 Switching between them fast all of the time is a bit of a pain.
 
+![Unifi](/images/unifi.png)
+
 I often use programs that don't have built-in settings for overriding the used audio device and switching between different audio devices can be a lot of pain.
+
+<!-- more -->
 
 For example Chrome - it uses the default input and output devices set by Windows. This means that if you want to change your active microphone, you need to open `Settings => System => Sound` and make the change there. **Too slow!**
 
