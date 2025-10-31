@@ -7,3 +7,10 @@
 - [Blog post - Getting Started](https://squidfunk.github.io/mkdocs-material/getting-started/)
 
 - [Official Docs](https://jameswillett.dev/getting-started-with-material-for-mkdocs/)
+
+
+
+```
+python3 -m venv .venv
+source .venv/bin/activate
+```

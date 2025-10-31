@@ -78,6 +78,8 @@ nav:
   - Home: index.md
   - Homelab:
       - homelab/index.md
+      - Choosing your hardware: homelab/choosing-your-hardware.md
+      - Hypervisor vs Bare metal: homelab/hypervisor-vs-bare-metal.md
       - Servers: homelab/servers.md
   - Sample pages:
       - Examples: examples.md

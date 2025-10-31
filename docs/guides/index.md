@@ -1,0 +1,8 @@
+- Proxmox
+- Home Assistant OS
+- Ubuntu with Docker
+- Unraid
+- Media Server - Plex, qBit, *arr
+- Gitea + Gitea Runners
+- Sonarqube
+- Immich

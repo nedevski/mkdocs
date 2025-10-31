@@ -1,117 +1,39 @@
 ---
-title: Homelab index
+title: Getting started
 ---
 
-### Tabs
+## Getting started
 
-=== "1st part"
+So, you want to self-host your applications?
 
-    ```yaml linenums="1" hl_lines="10-14"
-    site_name: My Docs
-    site_url: http://mkdocs.nedevski.com
-    theme:
-      name: material
-      icon:
-        logo: fontawesome/solid/blog
-      palette:
-        - scheme: slate
-          toggle:
-            icon: material/weather-sunny
-            name: Dark mode
-          primary: green
-          accent: deep purple
-        - scheme: default
-          toggle:
-            icon: material/weather-night
-            name: Light mode
-          primary: green
-          accent: deep purple
-    ```
+Before starting your selfhosting journey, it's really important to answer this question:
 
-=== "2nd part"
+What do YOU want to start self hosting?
 
-    ```yaml linenums="25" hl_lines="3-5"
-    markdown_extensions:
-      - attr_list
-      - pymdownx.emoji:
-          emoji_index: !!python/name:material.extensions.emoji.twemoji
-          emoji_generator: !!python/name:material.extensions.emoji.to_svg
-      - pymdownx.highlight:
-          anchor_linenums: true
-          line_spans: __span
-          pygments_lang_class: true
-      - pymdownx.inlinehilite
-      - pymdownx.snippets
-      - pymdownx.superfences
-    ```
+Your needs/wants/budget could dramatically change your approach and cost.
+
+Self-hosting can solve a multitude of (modern) problems and help you save a lot of money in the long run by using free alternatives to popular cloud apps. It can also be a time/money drain if you don't plan ahead. A well thought approach can help you:
+
+- [x] Improve your privacy by hosting your own data
+- [x] Reduce dependence on various cloud services - Google Drive, Netflix, Github, VPN providers
+- [x] Save money on cloud subscriptions
+- [x] Provide you with a developer sandbox, that's more powerful than cloud VMs for fraction of the cost
+- [x] Host your own personal websites or web applications
+- [x] Allow you to control your smart home with something centralized like HomeAssistant
+
+Here is an evergrowing list of applications that you can easily self-host - [awesome-selfhosted on Github](https://github.com/awesome-selfhosted/awesome-selfhosted)
 
 
-
-## Flowcharts
-
-```mermaid
-graph LR
-  A[Start] --> B{Failure?};
-  B -->|Yes| C[Investigate...];
-  C --> D[Debug];
-  D --> B;
-  B ---->|No| E[Success!];
-```
-
-
-## Collapsible thing
-
-??? info "Collapsible callout"
-
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
-    nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
-    massa, nec semper lorem quam in massa.
-
-## Grid cards
-
-<div class="grid cards" markdown>
-
--   :material-clock-fast:{ .lg .middle } __Set up in 5 minutes__
-
-    ---
-
-    Install [`mkdocs-material`](#) with [`pip`](#) and get up
-    and running in minutes
-
-    [:octicons-arrow-right-24: Getting started](#)
-
--   :fontawesome-brands-markdown:{ .lg .middle } __It's just Markdown__
-
-    ---
-
-    Focus on your content and generate a responsive and searchable static site
-
-    [:octicons-arrow-right-24: Reference](#)
-
--   :material-format-font:{ .lg .middle } __Made to measure__
-
-    ---
-
-    Change the colors, fonts, language, icons, logo and more with a few lines
-
-    [:octicons-arrow-right-24: Customization](#)
-
--   :material-scale-balance:{ .lg .middle } __Open Source, MIT__
-
-    ---
-
-    Material for MkDocs is licensed under MIT and available on [GitHub]
-
-    [:octicons-arrow-right-24: License](#)
-
-</div>
-
-
-## Checklist
-
-- [x] Lorem ipsum dolor sit amet, consectetur adipiscing elit
-- [ ] Vestibulum convallis sit amet nisi a tincidunt
-    * [x] In hac habitasse platea dictumst
-    * [x] In scelerisque nibh non dolor mollis congue sed et metus
-    * [ ] Praesent sed risus massa
-- [ ] Aenean pretium efficitur erat, donec pharetra, ligula non scelerisque
+## Topics
+- Using Hypervisor instead of Bare Metal OS
+- Choosing the right hardware
+- Using Dockerized apps
+- Setting up the file structure
+- Tracking configuration with Git
+- Core - VS Code Server
+- Core - DDNS
+- Core - Wireguard VPN
+- Exposing apps to the internet
+- Core - Nginx vs Cloudflare Tunnels
+- Personal blog - Wordpress, Ghost
+- Media server - Plex, Torrent, *arr
