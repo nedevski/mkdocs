@@ -8,6 +8,7 @@ title: Debugging random HDD spin-ups in Unraid
 tags:
   - Unraid
   - Immich
+  - NAS
 ---
  
 ## The problem
