@@ -12,18 +12,8 @@ tags:
   - Macros
 ---
 
----
-image:
-  path: /images/unifi.png
-  alt: HID Macros screenshot
----
- 
-## The problem
-
 I have a lot of audio input/output devices - headphones mic, audio interface mic, webcam mic and even more different audio outputs.
 Switching between them fast all of the time is a bit of a pain.
-
-![Unifi](/images/unifi.png)
 
 I often use programs that don't have built-in settings for overriding the used audio device and switching between different audio devices can be a lot of pain.
 
@@ -33,7 +23,7 @@ For example Chrome - it uses the default input and output devices set by Windows
 
 If you're a streamer - that's even worse - you want to have hotkeys for your scenes as well!
 
-## The solution
+## My solution
 
 I solved my issue by creating a DIY macro keyboard, which runs VBS/Powershell scripts to change my audio devices.
 
@@ -89,7 +79,7 @@ You can re-bind your numpad keys to `F13`-`F35`. You can also add modifiers to c
 
 Here is a link to the [full list](https://hidmacros.eu/forum/viewtopic.php?t=96) of available keys.
 
-![Desktop View](/images/2023-06-07-macro-keyboard-audio/01-rebind-key.jpg)
+![Desktop View](/images/blog/2306-budget-macro-keyboard/01-rebind-key.jpg)
 
 ### Run a program/script
 
@@ -99,7 +89,7 @@ Just attach the VBS file in the "run application" field and you're good to go.
 
 Also remember to click the "Save configuration" and "Compile all" buttons on top of the program.
 
-![Desktop View](/images/2023-06-07-macro-keyboard-audio/02-run-vbs-script.jpg)
+![Desktop View](/images/blog/2306-budget-macro-keyboard/02-run-vbs-script.jpg)
 
 ## Audio management Powershell script
 
