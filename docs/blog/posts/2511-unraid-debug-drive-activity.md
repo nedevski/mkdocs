@@ -12,16 +12,14 @@ tags:
   - NAS
 ---
  
-## The problem
-
-Everyone wants lower idle power consumption. Spinning down disks that are not frequently used is a great way to do that. However I recently had an issue with Immich randomly waking up both the data disk and the parity disk. I had moved its database to the Cache, no files were accessed and yet - the drives were spinning up. So I had to investigate!
+Everyone wants lower idle power consumption. Spinning down disks that are not frequently used is a great way to do that. However I recently had an issue with Immich randomly waking up both the `data2` disk and the `parity` disk. I had moved its database to the `cache`, no files were accessed and yet - the drives were spinning up. So I had to investigate!
 
 <!-- more -->
 
 I installed the File Activity plugin, but that didn't capture any files being accessed.
 That's when I learned about `fatrace`. It's a tool that monitors all file activity across the system and by that I really mean ALL file activity. When I tried saving the raw output of the command to file it grew to 100MB in 15-20 seconds!
 
-## The solution
+## Debugging the issue
 
 Since Unraid 7, the plugins that included `fatrace` are not compatible, that's why we need to install it manually
 
@@ -53,7 +51,7 @@ fatrace -t 2>&1 | grep -e "/mnt/disk2/folder1" -e "/mnt/cache/folder1
 ```
 
 
-## The offender
+## The solution (in my case)
 
 With those commands I was able to see that for some reason my Immich database was split between `disk2` and `cache` and in some instances the Immich server accessed the cache, but in others - `disk2`, which naturally woke up the disk.
 
