@@ -1,5 +1,6 @@
-site_name: My Docs
-site_url: http://mkdocs.nedevski.com
+site_name: Nikola Nedevski
+site_url: https://blog.nedevski.com
+
 theme:
   name: material
   icon:
@@ -9,13 +10,13 @@ theme:
       toggle:
         icon: material/weather-sunny
         name: Dark mode
-      primary: blue
+      primary: black
       accent: deep purple
     - scheme: default
       toggle:
         icon: material/weather-night
         name: Light mode
-      primary: blue
+      primary: indigo
       accent: deep purple
   features:
     - content.code.copy
@@ -67,10 +68,12 @@ markdown_extensions:
 extra:
   generator: true
   social:
-    - icon: fontawesome/brands/github
-      link: https://github.com/nedevski
+    - icon: fontawesome/solid/address-card
+      link: https://cv.nedevski.com
     - icon: fontawesome/brands/linkedin
       link: https://linkedin.com/in/nedevski
+    - icon: fontawesome/brands/github
+      link: https://github.com/nedevski
 
 copyright: Copyright &copy; 2025 Nikola Nedevski
 
@@ -78,10 +81,7 @@ nav:
   - Home: index.md
   - Homelab:
       - homelab/index.md
-      - Choosing your hardware: homelab/choosing-your-hardware.md
-      - Hypervisor vs Bare metal: homelab/hypervisor-vs-bare-metal.md
-      - Servers: homelab/servers.md
-  - Sample pages:
+  - Sample functionality:
       - Examples: examples.md
   - Blog:
       - blog/index.md

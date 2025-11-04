@@ -1,28 +1,62 @@
 ---
-title: Getting started
+title: Current setup
 ---
 
-## Getting started
+## Networking
 
-So, you want to self-host your applications?
+Since my apartment is hardwired with CAT6, I decided to go overkill and go full Ubiquiti. This might be an overkill for simpler setups, but as my network grew I saw how limited standard routers are and how complicated something like OpenWRT could get once you dive a bit deeper.
 
-Before starting your selfhosting journey, it's really important to answer this question:
+So I settled on this stack.
+- [Cloud Gateway Ultra](https://eu.store.ui.com/eu/en/products/ucg-ultra)
+- [Switch Lite 16 PoE](https://eu.store.ui.com/eu/en/category/switching-utility/products/usw-lite-16-poe)
+- [U6+ Access Points](https://eu.store.ui.com/eu/en/category/all-wifi/products/u6-plus)
 
-What do YOU want to start self hosting?
+This allows me to connect all 12 in-wall cables, 2 servers and 1 Powerline adapter with no spare ports, which is all I need.
 
-Your needs/wants/budget could dramatically change your approach and cost.
+With Unifi's powerful software I can easily create VLANs, multiple SSIDs and set-up an in-router Wireguard VPN which turned out to be the single most valuable thing over my upgrades.
 
-Self-hosting can solve a multitude of (modern) problems and help you save a lot of money in the long run by using free alternatives to popular cloud apps. It can also be a time/money drain if you don't plan ahead. A well thought approach can help you:
+## Main server
 
-- [x] Improve your privacy by hosting your own data
-- [x] Reduce dependence on various cloud services - Google Drive, Netflix, Github, VPN providers
-- [x] Save money on cloud subscriptions
-- [x] Provide you with a developer sandbox, that's more powerful than cloud VMs for fraction of the cost
-- [x] Host your own personal websites or web applications
-- [x] Allow you to control your smart home with something centralized like HomeAssistant
+As my main server I'm using a Dell OptiPlex 3080
 
-Here is an evergrowing list of applications that you can easily self-host - [awesome-selfhosted on Github](https://github.com/awesome-selfhosted/awesome-selfhosted)
+- OS: Proxmox VE
+- CPU: Intel i5-10600T (6 core, 12 thread)
+- RAM: 2x32GB DDR4 RAM
+- Storage: Samsung 980 1TB NVMe
+- LAN - Gigabit
+- Idle draw: 10-12w
 
+## NAS
+
+For my NAS I'm using a custom build PC
+
+- OS: Unraid
+- Motherboard: MSI PRO Z690-A
+- CPU: Intel i5-12600 (6 core, 12 thread, no e-cores)
+- RAM: 2x32GB DDR5 RAM
+- Storage: 4x6TB Seagate Ironwolf, 500GB Samsung 860 EVO SSD
+- LAN - 2.5G
+- Idle draw: 20-24w
+
+## UPS
+
+[Eaton Ellipse PRO UPS](https://www.eaton.com/bg/en-gb/skuPage.ELP1600DIN.html)
+
+- 4 battery powered outlets
+- 4 surge-only protected outlets (no battery)
+- USB connection
+
+## Apps and services
+
+- Networking overview
+- Mini PC overview
+  - Home Assistant
+  - Ubuntu + Docker
+- NAS Overview
+  - Immich
+  - Media stack - Plex, *arr, qBit
+  - Dev stack - Gitea, Gitea Runner, Sonarqube
+  - Dawarich (Location Timeline)
 
 ## Topics
 - Using Hypervisor instead of Bare Metal OS
